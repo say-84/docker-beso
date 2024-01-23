@@ -19,7 +19,7 @@
 
 # INSTALL
 ``` bash
-curl  -L -o elblasy.sh https://raw.githubusercontent.com/say-84/docker-beso/main/sayed.sh  && chmod +x sayed.sh && ./sayed.sh
+curl  -L -o sayed.sh https://raw.githubusercontent.com/say-84/docker-beso/main/sayed.sh  && chmod +x sayed.sh && ./sayed.sh
 ```
 
 

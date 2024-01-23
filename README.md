@@ -39,8 +39,6 @@ The default login credentials for NGinX Proxy Manager are:
 username: admin@example.com
 password: changeme   
  
-Started Odoo13 @ server hostname / IP address on port:8013 | Master Password: Sayed@2020 | Live chat port: 20013
- 
 Started Odoo14 @ server hostname / IP address on port:8014 | Master Password: Sayed@2020 | Live chat port: 20014
 
 Started Odoo15 @ server hostname / IP address on port:8015 | Master Password: Sayed@2020 | Live chat port: 20015
@@ -76,11 +74,6 @@ curl -s https://raw.githubusercontent.com/say-84/odoo16-docker-sh/main/run.sh | 
  for odoo 17
   ``` bash
  curl -s https://raw.githubusercontent.com/say-84/odoo17-docker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
-   ```
- for odoo 13 
-  ``` bash
- curl -s https://raw.githubusercontent.com/say-84/odoo13-docker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
-   ```
    ```
 # Easy Install
 

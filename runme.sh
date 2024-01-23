@@ -297,7 +297,7 @@ startInstall()
         
        
         cd docker/nginx-proxy-manager
-        wget https://raw.githubusercontent.com/elblasy33/docker-beso/main/docker-compose.yml
+        wget https://raw.githubusercontent.com/say-84/docker-beso/main/docker-compose.yml
         
         
       
@@ -326,8 +326,6 @@ startInstall()
         sleep 3s
         cd /opt
         cat << "EOF"
-
-
         
 _________ _        _______ _________ _______  _        _          _______  ______   _______  _______      __     ______ 
 \__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \   / ____ \
@@ -339,7 +337,35 @@ ___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/
 \_______/|/    )_)\_______)   )_(   |/     \|(_______/(_______/  (_______)(______/ (_______)(_______)    \____/ \_____/ 
                                                                                                                         
 EOF
-        curl -s https://raw.githubusercontent.com/elblasy33/odoo16-docker-sh/main/run.sh | sudo bash -s odoo-16-one 8016 20016
+        curl -s https://raw.githubusercontent.com/say-84/odoo13-docker-sh/main/run.sh | sudo bash -s odoo-13-one 8013 20013
+        
+ cat << "EOF" 
+        
+_________ _        _______ _________ _______  _        _          _______  ______   _______  _______      __     ______ 
+\__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \   / ____ \
+   ) (   |  \  ( || (    \/   ) (   | (   ) || (      | (        | (   ) || (  \  )| (   ) || (   ) |    \/) ) ( (    \/
+   | |   |   \ | || (_____    | |   | (___) || |      | |        | |   | || |   ) || |   | || |   | |      | | | (____  
+   | |   | (\ \) |(_____  )   | |   |  ___  || |      | |        | |   | || |   | || |   | || |   | |      | | |  ___ \ 
+   | |   | | \   |      ) |   | |   | (   ) || |      | |        | |   | || |   ) || |   | || |   | |      | | | (   ) )
+___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/  )| (___) || (___) |    __) (_( (___) )
+\_______/|/    )_)\_______)   )_(   |/     \|(_______/(_______/  (_______)(______/ (_______)(_______)    \____/ \_____/ 
+                                                                                                                        
+EOF
+        curl -s https://raw.githubusercontent.com/say-84/odoo14-docker-sh/main/run.sh | sudo bash -s odoo-14-one 8014 20014
+        
+ cat << "EOF" 
+        
+_________ _        _______ _________ _______  _        _          _______  ______   _______  _______      __     ______ 
+\__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \   / ____ \
+   ) (   |  \  ( || (    \/   ) (   | (   ) || (      | (        | (   ) || (  \  )| (   ) || (   ) |    \/) ) ( (    \/
+   | |   |   \ | || (_____    | |   | (___) || |      | |        | |   | || |   ) || |   | || |   | |      | | | (____  
+   | |   | (\ \) |(_____  )   | |   |  ___  || |      | |        | |   | || |   | || |   | || |   | |      | | |  ___ \ 
+   | |   | | \   |      ) |   | |   | (   ) || |      | |        | |   | || |   ) || |   | || |   | |      | | | (   ) )
+___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/  )| (___) || (___) |    __) (_( (___) )
+\_______/|/    )_)\_______)   )_(   |/     \|(_______/(_______/  (_______)(______/ (_______)(_______)    \____/ \_____/ 
+                                                                                                                        
+EOF
+        curl -s https://raw.githubusercontent.com/say-84/odoo16-docker-sh/main/run.sh | sudo bash -s odoo-16-one 8016 20016
         
  cat << "EOF"        
         
@@ -356,7 +382,7 @@ EOF
 
 
         
-        curl -s https://raw.githubusercontent.com/elblasy33/odoo15-d0cker-sh/main/run.sh | sudo bash -s odoo-15-one 8015 20015
+        curl -s https://raw.githubusercontent.com/say-84/odoo15-docker-sh/main/run.sh | sudo bash -s odoo-15-one 8015 20015
         
  
          cat << "EOF"        
@@ -388,7 +414,7 @@ EOF
         
         
         
-        curl -s https://raw.githubusercontent.com/elblasy33/odoo17-docker-sh/main/run.sh | sudo bash -s odoo-17-one 8017 20017
+        curl -s https://raw.githubusercontent.com/say-84/odoo17-docker-sh/main/run.sh | sudo bash -s odoo-17-one 8017 20017
        
 
         cd

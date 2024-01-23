@@ -19,7 +19,7 @@
 
 # INSTALL
 ``` bash
-curl  -L -o elblasy.sh https://raw.githubusercontent.com/elblasy33/docker-beso/main/elblasy.sh  && chmod +x elblasy.sh && ./elblasy.sh
+curl  -L -o elblasy.sh https://raw.githubusercontent.com/say-84/docker-beso/main/sayed.sh  && chmod +x sayed.sh && ./sayed.sh
 ```
 
 
@@ -39,11 +39,15 @@ The default login credentials for NGinX Proxy Manager are:
 username: admin@example.com
 password: changeme   
  
-Started Odoo16 @ server hostname / IP address on port:8016 | Master Password: Elblasy2022@1234 | Live chat port: 20016
+Started Odoo13 @ server hostname / IP address on port:8013 | Master Password: Sayed@2020 | Live chat port: 20013
  
-Started Odoo15 @ server hostname / IP address on port:8015 | Master Password: Elblasy2022@1234 | Live chat port: 20015
+Started Odoo14 @ server hostname / IP address on port:8014 | Master Password: Sayed@2020 | Live chat port: 20014
+
+Started Odoo15 @ server hostname / IP address on port:8015 | Master Password: Sayed@2020 | Live chat port: 20015
  
-Started Odoo14 @ server hostname / IP address on port:8014 | Master Password: Elblasy2022@1234 | Live chat port: 20014
+Started Odoo16 @ server hostname / IP address on port:8016 | Master Password: Sayed@2020 | Live chat port: 20016
+ 
+Started Odoo17 @ server hostname / IP address on port:8017 | Master Password: Sayed@2020 | Live chat port: 20017
 
 all odoo instance installed  folder path  /opt
  
@@ -60,15 +64,23 @@ To keep one Odoo version and erase  the other, the container can be erased from 
  Install two Odoo version  of the same release  Or more
  for example  two Odoo 16 
 ``` bash
-curl -s https://raw.githubusercontent.com/elblasy33/odoo16-docker-sh/main/run.sh | sudo bash -s  <odoo-name> <odoo port> <chat port> 
+curl -s https://raw.githubusercontent.com/say-84/odoo16-docker-sh/main/run.sh | sudo bash -s  <odoo-name> <odoo port> <chat port> 
  ```
  for odoo 15
   ``` bash
- curl -s https://raw.githubusercontent.com/elblasy33/odoo15-d0cker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
+ curl -s https://raw.githubusercontent.com/say-84/odoo15-d0cker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
   ```
  for odoo 14 
   ``` bash
- curl -s https://raw.githubusercontent.com/elblasy33/odoo14-docker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
+ curl -s https://raw.githubusercontent.com/say-84/odoo14-docker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
+ for odoo 17
+  ``` bash
+ curl -s https://raw.githubusercontent.com/say-84/odoo17-docker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
+   ```
+ for odoo 13 
+  ``` bash
+ curl -s https://raw.githubusercontent.com/say-84/odoo13-docker-sh/main/run.sh | sudo bash -s <odoo-name> <odoo port> <chat port>
+   ```
    ```
 # Easy Install
 
@@ -77,7 +89,7 @@ Check os version Ubuntu 20.04.5 LTS & Ubuntu 22.04.1 LTS
  
  First Command
 ``` bash
-curl  -L -o elblasy.sh https://raw.githubusercontent.com/elblasy33/docker-beso/main/elblasy.sh  && chmod +x elblasy.sh && ./elblasy.sh
+curl  -L -o elblasy.sh https://raw.githubusercontent.com/say-84/docker-beso/main/sayed.sh  && chmod +x sayed.sh && ./sayed.sh
 ```
  
 

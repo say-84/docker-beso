@@ -70,7 +70,7 @@ installApps()
             esac
         done
     fi
-
+    
     startInstall
 }
 
@@ -326,42 +326,8 @@ startInstall()
         echo ""       
         sleep 3s
         cd /opt
-
-
-
-if [[ "$ODOO_INSTALL" == [yY] ]]; then
-    echo "############################################"
-    echo "######     Install Odoo     ######"
-    echo "############################################"
-    PS3="Please choose Odoo version(s) to install (separate multiple versions with spaces, e.g., '1 3 5' for Odoo-13, Odoo-15): "
-    select versions in "Odoo-13" "Odoo-14" "Odoo-15" "Odoo-16" "Odoo-17" "Cancel"
-    do
-        case $versions in
-            "Odoo-13") selected_versions+="13 ";;
-            "Odoo-14") selected_versions+="14 ";;
-            "Odoo-15") selected_versions+="15 ";;
-            "Odoo-16") selected_versions+="16 ";;
-            "Odoo-17") selected_versions+="17 ";;
-            "Cancel") 
-                echo "Installation canceled."
-                break;;
-            *) 
-                echo "Invalid selection, please try again...";;
-        esac
-    done
-
-    if [ ! -z "$selected_versions" ]; then
-        echo "Selected Odoo version(s): $selected_versions"
         
-        # Loop through selected versions and install Odoo for each
-        for version in $selected_versions; do
-            echo "############################################"
-            echo "######     Install Odoo-$version     ######"
-            echo "############################################"
-            
-            case $version in
-                "13")
-            cat << "EOF"
+cat << "EOF"
          
 \__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \     / ____  )
    ) (   |  \  ( || (    \/   ) (   | (   ) || (      | (        | (   ) || (  \  )| (   ) || (   ) |    \/) )    \/    ) |
@@ -372,12 +338,9 @@ ___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/
 \_______/|/    )_)\_______)   )_(   |/     \|(_______/(_______/  (_______)(______/ (_______)(_______)    \____/   \_______)
                                                                                                                         
 EOF
-                    # Install Odoo-13
-                    echo "Installing Odoo-13..."
-                    curl -s https://raw.githubusercontent.com/say-84/odoo13-docker-sh/main/run.sh | sudo bash -s odoo-13-one 8013 20013
-                    ;;
-                "14")
-    cat << "EOF" 
+        curl -s https://raw.githubusercontent.com/say-84/odoo13-docker-sh/main/run.sh | sudo bash -s odoo-13-one 8013 20013
+
+ cat << "EOF" 
         
 \__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \      / | |
    ) (   |  \  ( || (    \/   ) (   | (   ) || (      | (        | (   ) || (  \  )| (   ) || (   ) |    \/) )    / /| |
@@ -388,11 +351,8 @@ ___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/
 \_______/|/    )_)\_______)   )_(   |/     \|(_______/(_______/  (_______)(______/ (_______)(_______)    \____/     _|_|
                                                                                                                         
 EOF
-                    # Install Odoo-14
-                    echo "Installing Odoo-14..."
-                    curl -s https://raw.githubusercontent.com/say-84/odoo14-docker-sh/main/run.sh | sudo bash -s odoo-14-one 8014 20014
-                    ;;
-                "15")
+        curl -s https://raw.githubusercontent.com/say-84/odoo14-docker-sh/main/run.sh | sudo bash -s odoo-14-one 8014 20014
+        
  cat << "EOF" 
         
 \__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \  |  _____|
@@ -405,12 +365,9 @@ ___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/
  
                                                                                                                         
 EOF
-                    # Install Odoo-15
-                    echo "Installing Odoo-15..."
-                    curl -s https://raw.githubusercontent.com/say-84/odoo15-docker-sh/main/run.sh | sudo bash -s odoo-15-one 8015 20015
-                    ;;
-                "16")
-cat << "EOF"        
+         curl -s https://raw.githubusercontent.com/say-84/odoo15-docker-sh/main/run.sh | sudo bash -s odoo-15-one 8015 20015
+        
+ cat << "EOF"        
         
 \__   __/( (    /|(  ____ \\__   __/(  ___  )( \      ( \        (  ___  )(  __  \ (  ___  )(  ___  )    /  \   / ____ \
    ) (   |  \  ( || (    \/   ) (   | (   ) || (      | (        | (   ) || (  \  )| (   ) || (   ) |    \/) ) ( (    \/
@@ -420,13 +377,12 @@ cat << "EOF"
 ___) (___| )  \  |/\____) |   | |   | )   ( || (____/\| (____/\  | (___) || (__/  )| (___) || (___) |    __) (_( (___) )
 \_______/|/    )_)\_______)   )_(   |/     \|(_______/(_______/  (_______)(______/ (_______)(_______)    \____/ \_____/ 
 
-EO
-                    # Install Odoo-16
-                    echo "Installing Odoo-16..."
-                    curl -s https://raw.githubusercontent.com/say-84/odoo16-docker-sh/main/run.sh | sudo bash -s odoo-16-one 8016 20016
-                    ;;
-                "17")
-cat << "EOF"        
+EOF
+
+     curl -s https://raw.githubusercontent.com/say-84/odoo16-docker-sh/main/run.sh | sudo bash -s odoo-16-one 8016 20016
+       
+ 
+ cat << "EOF"        
         
    /$$                       /$$               /$$ /$$     /$$$$$$        /$$                             /$$   /$$$$$$$$
  |__/                      | $$              | $$| $$     /$$__  $$      | $$                           /$$$$  |_____ $$/
@@ -437,22 +393,11 @@ cat << "EOF"
  | $$| $$  | $$ /$$$$$$$/  |  $$$$/|  $$$$$$$| $$| $$   |  $$$$$$/|  $$$$$$$|  $$$$$$/|  $$$$$$/       /$$$$$$ /$$/     
  |__/|__/  |__/|_______/    \___/   \_______/|__/|__/    \______/  \_______/ \______/  \______/        |______/|__/
  
+
 EOF
-                    # Install Odoo-17
-                    echo "Installing Odoo-17..."
-                    curl -s https://raw.githubusercontent.com/say-84/odoo17-docker-sh/main/run.sh | sudo bash -s odoo-17-one 8017 20017
-                    ;;
-            esac
-            
-            echo "Odoo-$version installation completed."
-            sleep 2s
-        done
-    fi
-
-    cd
-fi
-
  
+        curl -s https://raw.githubusercontent.com/say-84/odoo17-docker-sh/main/run.sh | sudo bash -s odoo-17-one 8017 20017
+  
         cd
       
     fi
